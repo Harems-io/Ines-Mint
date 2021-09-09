@@ -56,7 +56,7 @@ body {
   max-height: 50px;
 }
 .metamask-button:hover {
-  background-color: white;
+  background-color: black;
   color: #f6901c
 }
 
