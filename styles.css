@@ -12,7 +12,7 @@
 
 body {
   align-items: center;
-  background-image: url('images/home-bg.png');
+  background-image: url('images/home-bg-small.png');
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -81,21 +81,17 @@ body {
   margin: 0 auto;
   max-width:980px;
   min-width: 300px;
-  /* opacity: 0.75; */
   width:90%;
 }
 .minting-wrapper .logo {
   margin: 30px 0;
-  max-width:300px;
   text-align: center;
 }
 .minting-wrapper .logo img {
-  /* width: 90%; */
   width: 400px;
 }
 .mint-button {
   border-radius: 8px;
-
   background-color: white;
   border: 2px solid #CC1613;
   box-shadow: 0 0 2vw #CC1613;
@@ -133,7 +129,7 @@ body {
 .slide-info-container {
   color: black;
   font-family: "Avenir-LT-W01_85-Heavy1475544",avenir-lt-w05_85-heavy,sans-serif;;
-  font-size: 20px;
+  font-size: 25px;
   display: table;
   margin: 0 20px;
   max-width: 575px;
