@@ -1,13 +1,7 @@
 @font-face {
-    font-display: block;
     font-family:"Avenir-LT-W01_85-Heavy1475544";
     src:url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix");
     src:url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix") format("eot"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d513e15e-8f35-4129-ad05-481815e52625.woff2") format("woff2"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/61bd362e-7162-46bd-b67e-28f366c4afbe.woff") format("woff"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b.ttf") format("truetype"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/20577853-40a7-4ada-a3fb-dd6e9392f401.svg#20577853-40a7-4ada-a3fb-dd6e9392f401") format("svg");
-}
-@font-face {
-    font-family: "Avenir-LT-W05_85-Heavy";
-    src: url("https://static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Avenir_Family_Pack/v1/AvenirLTW05-85Heavy.woff2") format("woff2"),
-    url("https://static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/Avenir_Family_Pack/v1/AvenirLTW05-85Heavy.woff") format("woff");
 }
 
 body {
@@ -16,7 +10,7 @@ body {
   background-size: contain;
   display: flex;
   flex-direction: column;
-  font-family: "Avenir-LT-W01_85-Heavy1475544",avenir-lt-w05_85-heavy,sans-serif;;
+  font-family: "Avenir-LT-W01_85-Heavy1475544",sans-serif;
   height: 100vh;
   justify-content: space-around;
 }
@@ -99,7 +93,7 @@ body {
   cursor: pointer;
   display: block;
   font-size: 30px;
-  font-family: "Avenir-LT-W01_85-Heavy1475544",avenir-lt-w05_85-heavy,sans-serif;;
+  font-family: "Avenir-LT-W01_85-Heavy1475544",sans-serif;
   font-weight: bold;
   min-width: 270px;
   padding: 15px 32px;
@@ -128,7 +122,7 @@ body {
 
 .slide-info-container {
   color: black;
-  font-family: "Avenir-LT-W01_85-Heavy1475544",avenir-lt-w05_85-heavy,sans-serif;;
+  font-family: "Avenir-LT-W01_85-Heavy1475544",sans-serif;
   font-size: 25px;
   display: table;
   margin: 0 20px;
@@ -200,12 +194,6 @@ body {
 .slide-info-container p {
   max-width: 530px;
 }
-/* .slidernumber {
-  display: inline;
-  color: white;
-  font-size: 3vw;
-  font-family: "Avenir-LT-W01_85-Heavy1475544",avenir-lt-w05_85-heavy,sans-serif;;
-} */
 
 @media (max-width: 768px) {
   body {
