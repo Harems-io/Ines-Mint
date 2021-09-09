@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harems.io Web3 Minting</title>
+    <title>Mint Shroomies</title>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
     <script src="main.js"></script>
+    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/921049_731850b02b994cde9139d5f5a35b5049%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/921049_731850b02b994cde9139d5f5a35b5049%7Emv2.png">
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/921049_731850b02b994cde9139d5f5a35b5049%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/921049_731850b02b994cde9139d5f5a35b5049%7Emv2.png" type="image/png"/>
+    <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/921049_731850b02b994cde9139d5f5a35b5049%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/921049_731850b02b994cde9139d5f5a35b5049%7Emv2.png" type="image/png"/>
     <link rel="stylesheet preload" href="styles.css" as="style">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSJ4DBDYLY"></script>
@@ -19,19 +22,19 @@
       gtag('config', 'G-PSJ4DBDYLY');
     </script>
   </head>
-  <body style="background-color:black;">
+  <body>
     <div class="minting-wrapper">
       <div class="logo">
-        <img src="https://harems.io/Harems-2-small.png" />
+        <img src="/images/logo.svg" />
       </div>
       <div class="slide-info-container">
-        <p id="haremsMintInfo" style="margin-bottom: 10px;">Use the slider to mint up to 20 Harem Girls. Each Harem Girl costs 0.069ETH + Gas.</p>
+        <p id="shroomiesMintInfo" style="margin-bottom: 10px;">Use the slider to mint up to 20 Shroomies. Each Shroomie costs 0.069ETH + Gas.</p>
       </div>
       <div class="slide-container">
         <input type="range" min="1" max="20" value="1" class="slider" id="toMint">
       </div>
       <div class="mint-button-container">
-        <button class="mint-button" onclick="mint()" id="mintButton">Mint 1 Harem Girls</button>
+        <button class="mint-button" onclick="mint()" id="mintButton">Mint 1 Shroomies</button>
         <div id="remainingToMint"></div>
       </div>
       <div class="contract-info-container">
@@ -41,11 +44,11 @@
   </div>
   <script type="text/javascript">
     var mintButton = document.getElementById("mintButton");
-    var mintInfo = document.getElementById("haremsMintInfo");
+    var mintInfo = document.getElementById("shroomiesMintInfo");
     var slider = document.getElementById("toMint");
     var remaining = document.getElementById("remainingToMint");
 
-    const sliderString = (val) => { return `Mint ${val} <br /> Harem Girl${val > 1 ? 's' : ''}` }
+    const sliderString = (val) => { return `Mint ${val} <br /> Shroomie${val > 1 ? 's' : ''}` }
 
     mintButton.innerHTML = sliderString(parseInt(slider.value));
 
@@ -60,11 +63,11 @@
       const numLeftToMint  = await leftToMint();
 
       if(numLeftToMint > 0) {
-        remaining.innerHTML = `<span>${numWithCommas(numLeftToMint)} girls</span> left to be minted`;
+        remaining.innerHTML = `<span>${numWithCommas(numLeftToMint)} Shroomies</span> left to be minted`;
       }
 
       if(numLeftToMint === 0) {
-        mintButton.innerHTML = "All the Harem Girls have been minted.";
+        mintButton.innerHTML = "All the Shroomies have been minted.";
         mintButton.disabled = true;
 
         mintInfo.style.display =  "none";
@@ -72,7 +75,7 @@
         slider.disabled = true;
         slider.style.display = "none";
       } else if(numLeftToMint < 20) {
-        mintInfo.innerHTML = `Use the slider to mint up to ${numLeftToMint} Harem Girl${numLeftToMint > 1 ? 's' : ''}. Each Harem Girl costs 0.069ETH + Gas.`;
+        mintInfo.innerHTML = `Use the slider to mint up to ${numLeftToMint} Shroomie${numLeftToMint > 1 ? 's' : ''}. Each Shroomie costs 0.069ETH + Gas.`;
 
         slider.max = numLeftToMint;
       }

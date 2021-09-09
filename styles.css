@@ -1,9 +1,16 @@
+@font-face {
+    font-family:"Avenir-LT-W01_85-Heavy1475544";
+    src:url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix");
+    src:url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix") format("eot"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d513e15e-8f35-4129-ad05-481815e52625.woff2") format("woff2"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/61bd362e-7162-46bd-b67e-28f366c4afbe.woff") format("woff"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b.ttf") format("truetype"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/20577853-40a7-4ada-a3fb-dd6e9392f401.svg#20577853-40a7-4ada-a3fb-dd6e9392f401") format("svg");
+}
+
 body {
   align-items: center;
-  background-image: url('images/home-bg.png');
+  background-image: url('images/home-bg-small.png');
+  background-size: contain;
   display: flex;
   flex-direction: column;
-  font-family: "courier new";
+  font-family: "Avenir-LT-W01_85-Heavy1475544",sans-serif;
   height: 100vh;
   justify-content: space-around;
 }
@@ -12,12 +19,12 @@ body {
   display:block;
   width:90%;
   max-width:980px;
-  border: 2px solid #ffffff;
+  border: 2px solid black;
   margin-top: 24px;
   margin-bottom: 24px;
   margin-left:auto;
   margin-right:auto;
-  box-shadow: 0 0 1vw #ffffff;
+  box-shadow: 0 0 1vw black;
 }
 
 .contract-info-container {
@@ -31,14 +38,15 @@ body {
   margin: 15px;
 }
 .contract-info-container a{
-  color: #e172ff;
+  color: #CC1613;
+  font-weight: bold;
 }
 .metamask-button {
   align-items: center;
-  background: black;
-  border: 1px solid white;
+  background: white;
+  border: 1px solid black;
   border-radius: 5px;
-  color: white;
+  color: black;
   cursor: pointer;
   display: flex;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
@@ -48,7 +56,7 @@ body {
   max-height: 50px;
 }
 .metamask-button:hover {
-  background-color: white;
+  background-color: black;
   color: #f6901c
 }
 
@@ -58,10 +66,10 @@ body {
 }
 .minting-wrapper {
   align-items: center;
-  background-color: black;
-  border: 2px solid #ffffff;
+  background-color: rgba(255,255,255,0.85);
+  border: 2px solid #CC1613;
   border-radius: 10px;
-  box-shadow: 0 0 1vw #ffffff;
+  box-shadow: 0 0 1vw #CC1613;
   display:flex;
   flex-direction: column;
   margin: 0 auto;
@@ -71,23 +79,21 @@ body {
 }
 .minting-wrapper .logo {
   margin: 30px 0;
-  max-width:300px;
   text-align: center;
 }
 .minting-wrapper .logo img {
-  width: 90%;
+  width: 400px;
 }
 .mint-button {
   border-radius: 8px;
-
-  background-color: #000000;
-  border: 2px solid #e172ff;
-  box-shadow: 0 0 2vw #e172ff;
-  color: #e172ff;
+  background-color: white;
+  border: 2px solid #CC1613;
+  box-shadow: 0 0 2vw #CC1613;
+  color: #CC1613;
   cursor: pointer;
   display: block;
   font-size: 30px;
-  font-family: "courier new";
+  font-family: "Avenir-LT-W01_85-Heavy1475544",sans-serif;
   font-weight: bold;
   min-width: 270px;
   padding: 15px 32px;
@@ -102,7 +108,7 @@ body {
 .mint-button:hover {
   border: 2px solid #ffffff;
   color: #ffffff;
-  background-color: #e172ff;
+  background-color: #CC1613;
   box-shadow: 0 0 3vw #ee3839;
 }
 .mint-button:disabled,
@@ -115,9 +121,9 @@ body {
 }
 
 .slide-info-container {
-  color: white;
-  font-family: "courier new";
-  font-size: 20px;
+  color: black;
+  font-family: "Avenir-LT-W01_85-Heavy1475544",sans-serif;
+  font-size: 25px;
   display: table;
   margin: 0 20px;
   max-width: 575px;
@@ -131,9 +137,9 @@ body {
   -webkit-appearance: none;
   appearance: none;
   border-radius: 8px;
-  background: black;
+  background: white;
   display: inline-block;
-  outline: 2px solid #e172ff;
+  outline: 2px solid #CC1613;
   opacity: 1;
   margin: 40px auto;
   padding: 15px;
@@ -188,12 +194,6 @@ body {
 .slide-info-container p {
   max-width: 530px;
 }
-.slidernumber {
-  display: inline;
-  color: white;
-  font-size: 3vw;
-  font-family: "courier new";
-}
 
 @media (max-width: 768px) {
   body {
@@ -216,7 +216,7 @@ body {
 }
 
 #remainingToMint {
-  color: #e172ff;
+  color: #CC1613;
   font-style: italic;
   margin-top: 25px;
 }
