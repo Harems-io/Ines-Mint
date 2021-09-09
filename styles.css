@@ -1,9 +1,9 @@
 body {
   align-items: center;
-  background-image: url('images/home-bg.png');
+  /* background-image: url('images/home-bg.png'); */
   display: flex;
   flex-direction: column;
-  font-family: "courier new";
+  font-family: avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;;
   height: 100vh;
   justify-content: space-around;
 }
@@ -31,7 +31,7 @@ body {
   margin: 15px;
 }
 .contract-info-container a{
-  color: #e172ff;
+  color: #CC1613;
 }
 .metamask-button {
   align-items: center;
@@ -81,13 +81,13 @@ body {
   border-radius: 8px;
 
   background-color: #000000;
-  border: 2px solid #e172ff;
-  box-shadow: 0 0 2vw #e172ff;
-  color: #e172ff;
+  border: 2px solid ##CC1613;
+  box-shadow: 0 0 2vw #CC1613;
+  color: #CC1613;
   cursor: pointer;
   display: block;
   font-size: 30px;
-  font-family: "courier new";
+  font-family: avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;;
   font-weight: bold;
   min-width: 270px;
   padding: 15px 32px;
@@ -102,7 +102,7 @@ body {
 .mint-button:hover {
   border: 2px solid #ffffff;
   color: #ffffff;
-  background-color: #e172ff;
+  background-color: #CC1613;
   box-shadow: 0 0 3vw #ee3839;
 }
 .mint-button:disabled,
@@ -116,7 +116,7 @@ body {
 
 .slide-info-container {
   color: white;
-  font-family: "courier new";
+  font-family: avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;;
   font-size: 20px;
   display: table;
   margin: 0 20px;
@@ -133,7 +133,7 @@ body {
   border-radius: 8px;
   background: black;
   display: inline-block;
-  outline: 2px solid #e172ff;
+  outline: 2px solid #CC1613;
   opacity: 1;
   margin: 40px auto;
   padding: 15px;
@@ -192,7 +192,7 @@ body {
   display: inline;
   color: white;
   font-size: 3vw;
-  font-family: "courier new";
+  font-family: avenir-lt-w01_85-heavy1475544,avenir-lt-w05_85-heavy,sans-serif;;
 }
 
 @media (max-width: 768px) {
@@ -216,7 +216,7 @@ body {
 }
 
 #remainingToMint {
-  color: #e172ff;
+  color: #CC1613;
   font-style: italic;
   margin-top: 25px;
 }
