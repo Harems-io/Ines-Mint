@@ -1,4 +1,4 @@
-const mainnetContract = "0x8CC10621e08ee56181ae63847016a8096C7568aD";
+const mainnetContract = "0x21349dD7323e204cC9DD4ee8A86d4f5CC64D4a85";
 
 const mainnetAbi = [
   {
