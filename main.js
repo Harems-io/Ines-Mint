@@ -1,4 +1,4 @@
-const mainnetContract = "0xfC03dB45C058cf680CfEF6F1Ff3C0B5d82Fd62A4";
+const mainnetContract = "0x8CC10621e08ee56181ae63847016a8096C7568aD";
 
 const mainnetAbi = [
   {
@@ -737,8 +737,8 @@ const mainnetAbi = [
   }
 ];
 
-const COST = "69000000000000000";
-const MAX_SUPPLY = 10000;
+const COST = "100000000000000000";
+const MAX_SUPPLY = 100;
 
 var Web3;
 var window;
